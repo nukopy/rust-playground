@@ -82,14 +82,17 @@ impl From<f32> for Triangle {
 }
 
 // ジェネリック型のトレイト境界を定義する 3 つの方法
+#[warn(dead_code)]
 fn draw<T>(geometry: &impl Geometry<T>) {
     println!("draw: {:?}", geometry);
 }
 
+#[warn(dead_code)]
 fn draw1<T: Geometry<f64>>(geometry: &T) {
     println!("draw1: {:?}", geometry);
 }
 
+#[warn(dead_code)]
 fn draw2<T>(geometry: &T)
 where
     T: Geometry<f64>,

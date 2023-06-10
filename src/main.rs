@@ -1,4 +1,5 @@
 mod combinator;
+mod deref;
 mod error_handling;
 mod option;
 mod trait_practice;
@@ -26,4 +27,7 @@ fn main() {
 
     // trait
     trait_practice::main();
+
+    // RAII (ref: https://zenn.dev/mebiusbox/books/22d4c1ed9b0003/viewer/063df5)
+    deref::test_reference();
 }
