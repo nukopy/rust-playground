@@ -2,6 +2,7 @@ mod combinator;
 mod deref;
 mod error_handling;
 mod option;
+mod raii;
 mod trait_practice;
 
 use crate::combinator::{test_combinator, test_map};
